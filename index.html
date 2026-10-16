@@ -3,74 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>班级介绍</title>
+    <title>班级介绍主页</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Microsoft Yahei", sans-serif;
+            font-family: "Microsoft YaHei", sans-serif;
         }
         body {
-            background-color: #f0f7ff;
+            background-color: #f5f8ff;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
         }
+        /* 头部横幅 */
         header {
-            background: linear-gradient(135deg, #4080ff, #2060dd);
-            color: white;
+            background: linear-gradient(135deg, #3478f6, #1f5fcc);
+            color: #fff;
             text-align: center;
-            padding: 40px 20px;
+            padding: 45px 20px;
         }
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.4rem;
+            margin-bottom: 8px;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.9;
         }
         .container {
-            max-width: 1000px;
-            margin: 30px auto;
+            max-width: 1100px;
+            margin: 35px auto;
             padding: 0 20px;
         }
         .card {
-            background: #fff;
-            border-radius: 12px;
+            background: #ffffff;
+            border-radius: 14px;
             padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 26px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.07);
         }
         .card h2 {
-            color: #2060dd;
-            border-left: 5px solid #4080ff;
+            color: #1f5fcc;
+            border-left: 6px solid #3478f6;
             padding-left: 12px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
-        .class-slogan {
-            background-color: #e8f1ff;
-            padding: 20px;
+        .slogan-box {
+            background-color: #eaf2ff;
+            padding: 22px;
             text-align: center;
             font-size: 1.3rem;
             font-weight: bold;
-            color: #2060dd;
+            color: #1f5fcc;
             border-radius: 10px;
         }
-        .student-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top:15px;
+        /* 班级成员表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top:10px;
         }
-        .student-item {
+        table th, table td {
+            border: 1px solid #d9e4f5;
+            padding: 12px;
+            text-align: center;
+        }
+        table th {
+            background-color: #3478f6;
+            color: white;
+        }
+        table tr:nth-child(even) {
             background-color: #f4f8ff;
-            padding:8px 16px;
-            border-radius: 20px;
+        }
+        table tr:hover {
+            background-color: #e1edff;
         }
         footer {
             text-align: center;
-            padding:20px;
+            padding:25px;
             color:#666;
             font-size:0.9rem;
         }
@@ -78,53 +89,88 @@
 </head>
 <body>
     <header>
-        <h1>初一年级2603班</h1>
-        <p>同心共进，向阳成长</p>
+        <h1>高一（3）班</h1>
+        <p>同心筑梦，砥砺前行</p>
     </header>
 
     <div class="container">
         <!-- 班级简介 -->
         <div class="card">
             <h2>班级简介</h2>
-            <p>
-                我们是一个团结友爱、积极向上的集体。在学习上，大家互帮互助，勤学善思；在活动中，同学们齐心协力，勇于拼搏。
-                每一位同学都在这里收获知识、收获友谊，努力成为更好的自己。我们热爱这个大家庭，一起奔赴属于我们的美好未来！
-            </p>
+            <p>高一（3）班是一个团结向上、充满活力的班集体。我们学风浓厚，同学们互帮互助，积极参与各类文体活动。大家心怀理想，脚踏实地，在成长路上并肩前行，共同打造温暖优秀的班级大家庭。</p>
         </div>
 
         <!-- 班级口号 -->
         <div class="card">
             <h2>班级口号</h2>
-            <div class="class-slogan">
-                笃行致远，不负韶华；乘风破浪，再创辉煌！
+            <div class="slogan-box">
+                志存高远，奋勇争先；青春无悔，逐梦扬帆！
             </div>
         </div>
 
-        <!-- 班级成员 -->
+        <!-- 班级成员表格 -->
         <div class="card">
-            <h2>班级成员</h2>
-            <p>班主任：刘老师</p>
-            <div class="student-list">
-                <div class="student-item">无</div>
-                <div class="student-item">无</div>
-                <div class="student-item">无</div>
-                <div class="student-item">无</div>
-                <div class="student-item">无</div>
-                <div class="student-item">无</div>
-            </div>
-            <p style="margin-top:12px;"></p>
+            <h2>班级成员信息表</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>职务</th>
+                        <th>个人简介</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>无</td>
+                        <td>202601</td>
+                        <td>班长</td>
+                        <td>责任心强，热心班级事务</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>无</td>
+                        <td>202602</td>
+                        <td>学习委员</td>
+                        <td>热爱学习，乐于帮助同学答疑</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>无</td>
+                        <td>202603</td>
+                        <td>文体委员</td>
+                        <td>擅长文艺，积极组织班级活动</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>无</td>
+                        <td>202604</td>
+                        <td>普通同学</td>
+                        <td>性格开朗，热爱运动</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>无</td>
+                        <td>202605</td>
+                        <td>普通同学</td>
+                        <td>踏实认真，喜欢阅读</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top:12px; color:#666;"></p>
         </div>
 
         <!-- 班级风采 -->
         <div class="card">
             <h2>班级风采</h2>
-            <p>课堂上认真思考，运动会奋力奔跑，文艺活动尽情展示。我们用汗水书写青春，用笑容记录时光。</p>
-            <p style="margin-top:10px;"></p>
+            <p>课堂专注、赛场拼搏、活动欢笑，一张张照片记录我们的青春时光。</p>
         </div>
     </div>
 
     <footer>
-        初一年级2603班 班级主页 ©2026
+        初一2603班班级主页 © 2026
     </footer>
 </body>
 </html>
