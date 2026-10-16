@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f0f7ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #4080ff, #2060dd);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            color: #2060dd;
+            border-left: 5px solid #4080ff;
+            padding-left: 12px;
+            margin-bottom: 16px;
+        }
+        .class-slogan {
+            background-color: #e8f1ff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2060dd;
+            border-radius: 10px;
+        }
+        .student-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top:15px;
+        }
+        .student-item {
+            background-color: #f4f8ff;
+            padding:8px 16px;
+            border-radius: 20px;
+        }
+        footer {
+            text-align: center;
+            padding:20px;
+            color:#666;
+            font-size:0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>初一年级2603班</h1>
+        <p>同心共进，向阳成长</p>
+    </header>
+
+    <div class="container">
+        <!-- 班级简介 -->
+        <div class="card">
+            <h2>班级简介</h2>
+            <p>
+                我们是一个团结友爱、积极向上的集体。在学习上，大家互帮互助，勤学善思；在活动中，同学们齐心协力，勇于拼搏。
+                每一位同学都在这里收获知识、收获友谊，努力成为更好的自己。我们热爱这个大家庭，一起奔赴属于我们的美好未来！
+            </p>
+        </div>
+
+        <!-- 班级口号 -->
+        <div class="card">
+            <h2>班级口号</h2>
+            <div class="class-slogan">
+                笃行致远，不负韶华；乘风破浪，再创辉煌！
+            </div>
+        </div>
+
+        <!-- 班级成员 -->
+        <div class="card">
+            <h2>班级成员</h2>
+            <p>班主任：刘老师</p>
+            <div class="student-list">
+                <div class="student-item">无</div>
+                <div class="student-item">无</div>
+                <div class="student-item">无</div>
+                <div class="student-item">无</div>
+                <div class="student-item">无</div>
+                <div class="student-item">无</div>
+            </div>
+            <p style="margin-top:12px;"></p>
+        </div>
+
+        <!-- 班级风采 -->
+        <div class="card">
+            <h2>班级风采</h2>
+            <p>课堂上认真思考，运动会奋力奔跑，文艺活动尽情展示。我们用汗水书写青春，用笑容记录时光。</p>
+            <p style="margin-top:10px;"></p>
+        </div>
+    </div>
+
+    <footer>
+        初一年级2603班 班级主页 ©2026
+    </footer>
+</body>
+</html>
